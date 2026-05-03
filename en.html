@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruby Kiwi - Nature's Gem, A Sweet Revolution</title>
+    <meta name="description"
+        content="Discover the world's most extraordinary red-fleshed Ruby Kiwi. A harmony of natural vitamins and overwhelming sweetness.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <a href="#" class="logo">
+            <i class="fas fa-kiwi-bird"></i> RubyKiwi
+        </a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#story">Story</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="lang-toggle" onclick="location.href='index.html'">한국어</button>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Nature's<br><span>Ruby Temptation</span></h1>
+            <p>A red revolution that breaks the common sense of green kiwis. Ruby Kiwi is a premium fruit with
+                overwhelming sweetness and rich antioxidants.</p>
+            <a href="#product" class="cta-btn">Learn More</a>
+        </div>
+        <div class="hero-image">
+            <img src="assets/hero.png" alt="Ruby Kiwi Sliced">
+        </div>
+    </section>
+
+    <section class="features" id="product">
+        <h2 class="section-title">Why Ruby Kiwi?</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <i class="fas fa-heart feature-icon"></i>
+                <h3>Intense Red Core</h3>
+                <p>The red center, rich in anthocyanins, provides both visual pleasure and health benefits.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-candy-cane feature-icon"></i>
+                <h3>Unmatched Sweetness</h3>
+                <p>Significantly higher Brix levels than regular kiwis, offering natural sweetness without added sugar.
+                </p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-shield-virus feature-icon"></i>
+                <h3>Vitamin C Bomb</h3>
+                <p>Meet your daily recommended Vitamin C in just one fruit. A superfood optimized for immunity.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="lifestyle" id="story">
+        <div class="lifestyle-image">
+            <img src="assets/lifestyle.png" alt="Ruby Kiwis on a Table">
+        </div>
+        <div class="lifestyle-content">
+            <h2>Bringing Sparkling<br>Value to Your Life</h2>
+            <p>Ruby Kiwi is more than just a fruit. It's the best choice for special desserts, gifts for loved ones, and
+                your healthy morning routine.</p>
+            <p>This red gem from the pristine nature of New Zealand will add elegance to your dining table.</p>
+            <a href="#contact" class="cta-btn" style="background: var(--secondary); margin-top: 20px;">Order Now</a>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-links">
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+            <a href="#">Support</a>
+        </div>
+        <p>&copy; 2024 RubyKiwi International. All rights reserved.</p>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>
